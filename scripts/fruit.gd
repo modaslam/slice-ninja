@@ -16,7 +16,6 @@ signal life
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
-	generate(Vector2(640, 800))
 
 
 func generate(initialPos):
@@ -52,7 +51,3 @@ func _process(delta):
 		queue_free()
 	if body1.position.y > 800 and body2.position.y > 800:
 		queue_free()
-
-
-func _on_Timer_timeout():
-	cut()
