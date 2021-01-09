@@ -46,7 +46,6 @@ func cut():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if position.y > 800:
-		print("Reached ground")
 		emit_signal("life")
 		queue_free()
 	if body1.position.y > 800 and body2.position.y > 800:
